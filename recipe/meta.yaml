@@ -23,6 +23,7 @@ requirements:
     - pandas
     - numpy
     - gplately >=0.4
+    - scikit-learn
 
 test:
   imports:

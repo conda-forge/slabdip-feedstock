@@ -1,5 +1,5 @@
 {% set name = "slabdip" %}
-{% set version = "4.2.1" %}
+{% set version = "4.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/slabdip-{{ version }}.tar.gz
-  sha256: 3707d6873526bb02fccc68bc3d54e87e80957bd716ab9ac65388c6547b6db9a7
+  sha256: 93ba2dd41a275b9eed5d8ce6f69ec4f6a63d244b369b14a8778790659922c107
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
